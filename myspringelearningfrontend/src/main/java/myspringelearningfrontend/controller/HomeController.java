@@ -17,8 +17,7 @@ public class HomeController{
 	@GetMapping("/")
 	public String indexPage(Model model) {
 		model.addAttribute("message", "Welcome to eLearning Portal");
-		List<String> names = Arrays.asList("Mohit","Bharat","Krishna","Mohan");
-		model.addAttribute("list", names);
+		
 		return "index";
 	}
 }
